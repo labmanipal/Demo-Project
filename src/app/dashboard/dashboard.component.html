@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div class="user-says">
+  <h1>
+    USER SAYS</h1>
+</div>
+<div>
+  <input type="text" (keyup.enter)="addContact(name.value);" #name class="testbox" placeholder="Add what user
+  will say and press <ENTER>" />
+</div>
+<div class="label">
+  
+    <div class="s6">
+      Label: How can I send money through mCASH?
+    </div>
+    <div class="s6">
+      necnajn
+    </div>
+  
+</div>
+
+
+
+<div class="container">         
+  <table class="table table-condensed">
+    
+    <tbody>
+      <tr  *ngFor="let da of data">
+        <td>{{da.name}}</td>
+        <td ><button class="delete" (click)="removeContact(da)">Delete</button></td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+

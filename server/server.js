@@ -8,7 +8,7 @@ var express = require('express'),
 var app = express();
 
 // Point static path to dist
-app.use(express.static(path.join(__dirname, '../dist')));
+app.use(express.static(path.join(__dirname, '../dist/demo-app')));
 
 // Get port from environment and store in Express
 const port = '3000';
